@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Members</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+
+        .logo img {
+            width: 80px;
+            height: 80px;
+        }
+
+        .logo h1 {
+            margin-left: 10px;
+            font-size: 1.8rem;
+            color: #ffaa00;
+        }
+
+        .team-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .member-card {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .member-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .member-photo {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 0 auto 15px;
+        }
+
+        .member-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .member-name {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #ffaa00;
+        }
+
+        .member-role {
+            font-size: 1rem;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <img src="your-logo-url.png" alt="Logo">
+        <h1>Our Team</h1>
+    </div>
+
+    <div class="team-container">
+        <div class="member-card">
+            <div class="member-photo">
+                <img src="https://avatars.githubusercontent.com/u/10006648?v=4" alt="Light Chen">
+            </div>
+            <div class="member-name">Light Chen</div>
+            <div class="member-role">Founder</div>
+        </div>
+
+        <div class="member-card">
+            <div class="member-photo">
+                <img src="https://avatars.githubusercontent.com/u/45489725?v=4" alt="Ryan Chang">
+            </div>
+            <div class="member-name">Ryan Chang</div>
+            <div class="member-role">Founder</div>
+        </div>
+    </div>
+</body>
+</html>
